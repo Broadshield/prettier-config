@@ -1,7 +1,8 @@
 {
   "$schema": "http://json.schemastore.org/prettierrc",
   "tabWidth": 2,
-  "indent": "space",
+  "indent": 2,
+  "useTabs": false,
   "printWidth": 100,
   "bracketSameLine": true,
   "endOfLine": "lf",
@@ -33,7 +34,7 @@
     {
       "files": ["**/*.json"],
       "options": {
-        "parser": "json5"
+        "parser": "json"
       }
     },
     {
