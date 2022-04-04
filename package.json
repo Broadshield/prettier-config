@@ -2,7 +2,7 @@
   "name": "@Broadshield/prettier-config",
   "description": "Prettier configuration for Broadshield",
   "main": "prettierrc.json",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Broadshield/prettier-config.git"
@@ -27,9 +27,9 @@
   },
   "dependencies": {
     "@prettier/plugin-ruby": "^2.0.0",
-            "@prettier/plugin-xml": "^2.0.1",
-            "prettier": "^2.6.2",
-            "prettier-plugin-java": "1.6.1",
+    "@prettier/plugin-xml": "^2.0.1",
+    "prettier": "^2.6.2",
+    "prettier-plugin-java": "1.6.1",
     "prettier-plugin-properties": "^0.1.0",
     "prettier-plugin-sh": "^0.10.0"
   },
