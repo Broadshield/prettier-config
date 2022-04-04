@@ -7,11 +7,11 @@
   "bracketSameLine": true,
   "endOfLine": "lf",
   "embeddedLanguageFormatting": "auto",
-    "trailingComma": "es5",
-	"bracketSpacing": true,
-	"semi": true,
-	"arrowParens": "always",
-    "singleQuote": true,
+  "trailingComma": "es5",
+  "bracketSpacing": true,
+  "semi": true,
+  "arrowParens": "always",
+  "singleQuote": true,
 
   "overrides": [
     {

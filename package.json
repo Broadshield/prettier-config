@@ -14,10 +14,7 @@
     "access": "public",
     "registry": "https://npm.pkg.github.com"
   },
-  "keywords": [
-    "prettier",
-    "config"
-  ],
+  "keywords": ["prettier", "config"],
   "engines": {
     "node": ">=12"
   },
