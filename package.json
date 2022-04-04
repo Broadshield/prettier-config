@@ -2,9 +2,12 @@
   "name": "@Broadshield/prettier-config",
   "description": "Prettier configuration for Broadshield",
   "main": "index.json",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "repository": "git@github.com:Broadshield/prettier-config.git",
   "author": "Jamie Nelson <jamie@wearsafe.com>",
   "license": "Apache-2.0",
-  "prettier": "@Broadshield/prettier-config"
+  "prettier": "@Broadshield/prettier-config",
+  "scripts": {
+    "postversion": "git push --tags -f && git push -f"
+  }
 }
