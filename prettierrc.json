@@ -41,6 +41,15 @@
         "parser": "markdown",
         "proseWrap": "preserve"
       }
+    },
+    {
+      "files": ["**/*.sh"],
+      "options": {
+        "parser": "sh",
+        "tabWidth": 2,
+        "useTabs": false,
+        "indent": 2
+      }
     }
   ]
 }
