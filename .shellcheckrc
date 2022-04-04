@@ -1,0 +1,5 @@
+# Following source doesn't work in most setups
+disable=SC1090
+disable=SC1091
+disable=SC2030
+disable=SC2031
