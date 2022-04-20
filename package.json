@@ -2,6 +2,15 @@
   "name": "@Broadshield/prettier-config",
   "description": "Prettier configuration for Broadshield",
   "main": "prettierrc.json",
+  "files": [
+    "prettierrc.json",
+    ".markdownlint.yaml",
+    ".flake8",
+    ".prettierignore",
+    ".editorconfig",
+    ".shellcheckrc",
+    ".isort.cfg"
+  ],
   "version": "0.1.8",
   "repository": {
     "type": "git",
@@ -16,7 +25,9 @@
   },
   "keywords": [
     "prettier",
-    "config"
+    "config",
+    "prettier-config",
+    "Broadshield"
   ],
   "engines": {
     "node": ">=12"
@@ -26,19 +37,29 @@
     "postversion": "git push --tags -f && git push -f"
   },
   "dependencies": {
-    "@prettier/plugin-ruby": "^2.0.0",
-    "@prettier/plugin-xml": "^2.0.1",
+    "@prettier/plugin-ruby": "^2.1.0",
+    "@prettier/plugin-xml": "^2.1.0",
     "prettier": "^2.6.2",
     "prettier-plugin-java": "1.6.1",
     "prettier-plugin-properties": "^0.1.0",
-    "prettier-plugin-sh": "^0.10.0"
+    "prettier-plugin-sh": "^0.10.1"
   },
-  "peerDependencies": {
-    "@prettier/plugin-ruby": "^2.0.0",
-    "@prettier/plugin-xml": "^2.0.1",
-    "prettier": "^2.6.2",
-    "prettier-plugin-java": "1.6.1",
-    "prettier-plugin-properties": "^0.1.0",
-    "prettier-plugin-sh": "^0.10.0"
-  }
+  "optionalDependencies": {
+    "@typescript-eslint/typescript-estree": "5.20.0",
+    "eslint": ">=7.0.0 || >=8.0.0",
+    "eslint-config-prettier": ">=7.0.0 || >=8.0.0",
+    "postcss-scss": "^3",
+    "stylelint": ">=11.0.0 || >=12.0.0 || >=13.0.0 || >=14.0.0",
+    "stylelint-config-prettier": ">=9.0.0",
+    "typescript": ">=2.8.0 || >= 3.2.0-dev || >= 3.3.0-dev || >= 3.4.0-dev || >= 3.5.0-dev || >= 3.6.0-dev || >= 3.6.0-beta || >= 3.7.0-dev || >= 3.7.0-beta || ^4.0.0"
+  },
+  "bundledDependencies": [
+    "@prettier/plugin-ruby",
+    "@prettier/plugin-xml",
+    "prettier",
+    "prettier-plugin-java",
+    "prettier-plugin-properties",
+    "prettier-plugin-sh"
+  ],
+  "packageManager": "yarn@3.2.0"
 }

@@ -3,7 +3,7 @@
   "tabWidth": 2,
   "indent": 2,
   "useTabs": false,
-  "printWidth": 100,
+  "printWidth": 120,
   "bracketSameLine": true,
   "endOfLine": "lf",
   "embeddedLanguageFormatting": "auto",
@@ -23,6 +23,7 @@
     {
       "files": ["**/*.ts", "**/*.tsx"],
       "options": {
+        "parser": "typescript",
         "useTabs": false,
         "tabWidth": 2,
         "trailingComma": "all",
