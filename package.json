@@ -2,39 +2,28 @@
   "name": "@Broadshield/prettier-config",
   "description": "Prettier configuration for Broadshield",
   "main": "prettierrc.json",
-  "files": [
-    "prettierrc.json",
-    ".markdownlint.yaml",
-    ".flake8",
-    ".prettierignore",
-    ".editorconfig",
-    ".shellcheckrc",
-    ".isort.cfg"
-  ],
-  "version": "0.1.8",
+  "files": ["prettierrc.json", ".markdownlint.yaml", ".flake8", ".prettierignore", ".editorconfig", ".shellcheckrc", ".isort.cfg"],
+  "version": "0.2.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Broadshield/prettier-config.git"
+    "url": "git+https://github.com/Broadshield/prettier-config.git",
+    "directory": "."
   },
   "author": "Jamie Nelson <jamie@wearsafe.com>",
   "license": "Apache-2.0",
-  "prettier": "@Broadshield/prettier-config",
   "publishConfig": {
     "access": "public",
     "registry": "https://npm.pkg.github.com"
   },
-  "keywords": [
-    "prettier",
-    "config",
-    "prettier-config",
-    "Broadshield"
-  ],
+  "keywords": ["prettier", "config", "prettier-config", "Broadshield"],
   "engines": {
-    "node": ">=12"
+    "node": ">=14.15.0"
   },
   "scripts": {
-    "format": "prettier --write . --config .prettierrc.yml",
-    "postversion": "git push --tags -f && git push -f"
+    "format": "prettier --write . --config .prettierrc.json",
+    "bump": "yarn version -i patch",
+    "postversion": "git push --tags -f && git push -f",
+    "precommit": "pretty-quick"
   },
   "dependencies": {
     "@prettier/plugin-ruby": "^2.1.0",
@@ -44,8 +33,13 @@
     "prettier-plugin-properties": "^0.1.0",
     "prettier-plugin-sh": "^0.10.1"
   },
+  "devDependencies": {
+    "husky": "latest",
+    "lint-staged": "latest",
+    "pretty-quick": "^3.1.3"
+  },
   "optionalDependencies": {
-    "@typescript-eslint/typescript-estree": "5.20.0",
+    "@typescript-eslint/typescript-estree": ">=5.0.0",
     "eslint": ">=7.0.0 || >=8.0.0",
     "eslint-config-prettier": ">=7.0.0 || >=8.0.0",
     "postcss-scss": "^3",
@@ -53,13 +47,9 @@
     "stylelint-config-prettier": ">=9.0.0",
     "typescript": ">=2.8.0 || >= 3.2.0-dev || >= 3.3.0-dev || >= 3.4.0-dev || >= 3.5.0-dev || >= 3.6.0-dev || >= 3.6.0-beta || >= 3.7.0-dev || >= 3.7.0-beta || ^4.0.0"
   },
-  "bundledDependencies": [
-    "@prettier/plugin-ruby",
-    "@prettier/plugin-xml",
-    "prettier",
-    "prettier-plugin-java",
-    "prettier-plugin-properties",
-    "prettier-plugin-sh"
-  ],
+  "bundledDependencies": ["@prettier/plugin-ruby", "@prettier/plugin-xml", "prettier", "prettier-plugin-java", "prettier-plugin-properties", "prettier-plugin-sh", "stylelint", "stylelint-config-prettier", "typescript", "postcss-scss", "eslint", "eslint-config-prettier", "@typescript-eslint/typescript-estree"],
+  "lint-staged": {
+    "*": ["prettier --write", "git add"]
+  },
   "packageManager": "yarn@3.2.0"
 }

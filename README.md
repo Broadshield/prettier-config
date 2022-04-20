@@ -28,7 +28,25 @@ yarn add -D "github:@Broadshield/prettier-config"
 
 ```json
 {
-
   "prettier": "@Broadshield/prettier-config"
 }
+```
+
+## Copy the [.prettierignore](.prettierignore) file after installing
+
+```bash
+# Copy the .prettierignore file to the root of your repository
+cp node-modules/@Broadshield/prettier-config/.prettierignore .prettierignore
+```
+
+## Setup auto-formatting on changed files when committing
+
+```bash
+npx mrm@2 lint-staged
+```
+
+### Or run it on changed files manually
+
+```bash
+prettier --write $(git diff --name-only --diff-filter d | grep '\.ts$' | xargs)
 ```

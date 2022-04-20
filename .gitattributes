@@ -279,7 +279,6 @@ TODO text
 *.config text
 .editorconfig text
 .env text
-.gitattributes text
 .gitconfig text
 .htaccess text
 *.lock text -diff
