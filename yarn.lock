@@ -25,6 +25,7 @@ __metadata:
     stylelint: ">=11.0.0 || >=12.0.0 || >=13.0.0 || >=14.0.0"
     stylelint-config-prettier: ">=9.0.0"
     typescript: ">=2.8.0 || >= 3.2.0-dev || >= 3.3.0-dev || >= 3.4.0-dev || >= 3.5.0-dev || >= 3.6.0-dev || >= 3.6.0-beta || >= 3.7.0-dev || >= 3.7.0-beta || ^4.0.0"
+    yaml: ^2.0.1
   dependenciesMeta:
     "@typescript-eslint/typescript-estree":
       optional: true
@@ -39,6 +40,8 @@ __metadata:
     stylelint-config-prettier:
       optional: true
     typescript:
+      optional: true
+    yaml:
       optional: true
   languageName: unknown
   linkType: soft
@@ -2884,6 +2887,13 @@ __metadata:
   version: 1.10.2
   resolution: "yaml@npm:1.10.2"
   checksum: ce4ada136e8a78a0b08dc10b4b900936912d15de59905b2bf415b4d33c63df1d555d23acb2a41b23cf9fb5da41c256441afca3d6509de7247daa062fd2c5ea5f
+  languageName: node
+  linkType: hard
+
+"yaml@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "yaml@npm:2.0.1"
+  checksum: 23f95ff0d646c894048ac5072b5b6d393a398af1b2553916f0de276d62dbb3279ae3c969d7fcefe7a213be4efc9b4aa3ae1439c97095d3d3765fc6bc424807ac
   languageName: node
   linkType: hard
 

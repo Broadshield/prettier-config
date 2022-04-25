@@ -1,4 +1,5 @@
 node_modules
 yarn-error*
-/.yarn/cache/
 package-lock.json
+/packages/
+.env

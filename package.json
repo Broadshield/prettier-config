@@ -22,6 +22,9 @@
   "scripts": {
     "format": "prettier --write . --config .prettierrc.json",
     "bump": "yarn version -i patch",
+    "bump:minor": "yarn version -i minor",
+    "build": "yarn pack --install-if-needed --out packages/%s-%v.tgz",
+    "publish": "yarn npm publish --access public",
     "postversion": "git push --tags -f && git push -f",
     "precommit": "pretty-quick"
   },
@@ -45,9 +48,9 @@
     "postcss-scss": "^3",
     "stylelint": ">=11.0.0 || >=12.0.0 || >=13.0.0 || >=14.0.0",
     "stylelint-config-prettier": ">=9.0.0",
-    "typescript": ">=2.8.0 || >= 3.2.0-dev || >= 3.3.0-dev || >= 3.4.0-dev || >= 3.5.0-dev || >= 3.6.0-dev || >= 3.6.0-beta || >= 3.7.0-dev || >= 3.7.0-beta || ^4.0.0"
+    "typescript": ">=2.8.0 || >= 3.2.0-dev || >= 3.3.0-dev || >= 3.4.0-dev || >= 3.5.0-dev || >= 3.6.0-dev || >= 3.6.0-beta || >= 3.7.0-dev || >= 3.7.0-beta || ^4.0.0",
+    "yaml": "^2.0.1"
   },
-  "bundledDependencies": ["@prettier/plugin-ruby", "@prettier/plugin-xml", "prettier", "prettier-plugin-java", "prettier-plugin-properties", "prettier-plugin-sh", "stylelint", "stylelint-config-prettier", "typescript", "postcss-scss", "eslint", "eslint-config-prettier", "@typescript-eslint/typescript-estree"],
   "lint-staged": {
     "*": ["prettier --write", "git add"]
   },
