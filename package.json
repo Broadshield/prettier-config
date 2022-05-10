@@ -2,8 +2,7 @@
   "name": "@Broadshield/prettier-config",
   "description": "Prettier configuration for Broadshield",
   "main": "prettierrc.json",
-  "files": ["prettierrc.json", ".markdownlint.yaml", ".flake8", ".prettierignore", ".editorconfig", ".shellcheckrc", ".isort.cfg"],
-  "version": "0.2.1",
+  "version": "0.2.2",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Broadshield/prettier-config.git",
@@ -15,7 +14,12 @@
     "access": "public",
     "registry": "https://npm.pkg.github.com"
   },
-  "keywords": ["prettier", "config", "prettier-config", "Broadshield"],
+  "keywords": [
+    "prettier",
+    "config",
+    "prettier-config",
+    "Broadshield"
+  ],
   "engines": {
     "node": ">=14.15.0"
   },
@@ -53,7 +57,10 @@
     "yaml": "^2.0.1"
   },
   "lint-staged": {
-    "*": ["prettier --write", "git add"]
+    "*": [
+      "prettier --write",
+      "git add"
+    ]
   },
   "packageManager": "yarn@3.2.0"
 }
