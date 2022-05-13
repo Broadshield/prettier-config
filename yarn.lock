@@ -139,21 +139,21 @@ __metadata:
   linkType: hard
 
 "@prettier/plugin-ruby@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "@prettier/plugin-ruby@npm:3.0.0"
+  version: 3.1.1
+  resolution: "@prettier/plugin-ruby@npm:3.1.1"
   dependencies:
     prettier: ">=2.3.0"
-  checksum: 6e9d2ddded8cb04d6df76369b368d8c3f5bd1144cb1417ac7bfcaa3e90432c83c30c1f253a57297777e7baf19edffe390e6d82809599338a96f9d0fa7f897368
+  checksum: 44a61293ced57ecd5a8e73bdca07a214e3ffae65876887bdb4e0c5d038ea34d4d1aca96217ca9bc9031d0eeab52277349ac60860d009f888cf749e71894920ef
   languageName: node
   linkType: hard
 
 "@prettier/plugin-xml@npm:^2.1.0":
-  version: 2.1.0
-  resolution: "@prettier/plugin-xml@npm:2.1.0"
+  version: 2.2.0
+  resolution: "@prettier/plugin-xml@npm:2.2.0"
   dependencies:
     "@xml-tools/parser": ^1.0.11
     prettier: ">=2.4.0"
-  checksum: c19b102d6c260262a6182fbd4249de921f3311da747f88c645d8dc1c27a61c09d0c89d1cb6fb9e7b4bd9915cb8b45feb3c87386c2e79daa6b44daa2c3fbb75ef
+  checksum: 480fb67fe711463ab6b5678ce996486873b4d6440c31338af3f8dd5054c7ae9539dd81621637c85eed904727cfe17b7213e717d451df2fee56c8c50251f6bb69
   languageName: node
   linkType: hard
 
@@ -1106,11 +1106,11 @@ __metadata:
   linkType: hard
 
 "globals@npm:^13.6.0, globals@npm:^13.9.0":
-  version: 13.13.0
-  resolution: "globals@npm:13.13.0"
+  version: 13.15.0
+  resolution: "globals@npm:13.15.0"
   dependencies:
     type-fest: ^0.20.2
-  checksum: c55ea8fd3afecb72567bac41605577e19e68476993dfb0ca4c49b86075af5f0ae3f0f5502525f69010f7c5ea5db6a1c540a80a4f80ebdfb2f686d87b0f05d7e9
+  checksum: 383ade0873b2ab29ce6d143466c203ed960491575bc97406395e5c8434026fb02472ab2dfff5bc16689b8460269b18fda1047975295cd0183904385c51258bae
   languageName: node
   linkType: hard
 
@@ -1203,11 +1203,11 @@ __metadata:
   linkType: hard
 
 "husky@npm:latest":
-  version: 7.0.4
-  resolution: "husky@npm:7.0.4"
+  version: 8.0.1
+  resolution: "husky@npm:8.0.1"
   bin:
     husky: lib/bin.js
-  checksum: c6ec4af63da2c9522da8674a20ad9b48362cc92704896cc8a58c6a2a39d797feb2b806f93fbd83a6d653fbdceb2c3b6e0b602c6b2e8565206ffc2882ef7db9e9
+  checksum: 943a73a13d0201318fd30e83d299bb81d866bd245b69e6277804c3b462638dc1921694cb94c2b8c920a4a187060f7d6058d3365152865406352e934c5fff70dc
   languageName: node
   linkType: hard
 
@@ -1463,8 +1463,8 @@ __metadata:
   linkType: hard
 
 "lint-staged@npm:latest":
-  version: 12.3.8
-  resolution: "lint-staged@npm:12.3.8"
+  version: 12.4.1
+  resolution: "lint-staged@npm:12.4.1"
   dependencies:
     cli-truncate: ^3.1.0
     colorette: ^2.0.16
@@ -1482,7 +1482,7 @@ __metadata:
     yaml: ^1.10.2
   bin:
     lint-staged: bin/lint-staged.js
-  checksum: af6a89ae4244e4eac7180c6e7da452f378fd156ff38eaa666ecbb78f1e2efb7f1a9fc766dcc1cdde2bd76e03da68e602056ca9d2f1c6e46cf10aa83d20bf4d49
+  checksum: b57183b537064cda6caef6679918bf271903145f7c28d09567e918b8b13094048b579f8df808ea590dbd7ea2ec332327c5e372cf3d77e85b7b0254f6541ce4c3
   languageName: node
   linkType: hard
 
@@ -2600,9 +2600,9 @@ __metadata:
   linkType: hard
 
 "tslib@npm:^2.1.0":
-  version: 2.3.1
-  resolution: "tslib@npm:2.3.1"
-  checksum: de17a98d4614481f7fcb5cd53ffc1aaf8654313be0291e1bfaee4b4bb31a20494b7d218ff2e15017883e8ea9626599b3b0e0229c18383ba9dce89da2adf15cb9
+  version: 2.4.0
+  resolution: "tslib@npm:2.4.0"
+  checksum: 8c4aa6a3c5a754bf76aefc38026134180c053b7bd2f81338cb5e5ebf96fefa0f417bff221592bf801077f5bf990562f6264fecbc42cd3309b33872cb6fc3b113
   languageName: node
   linkType: hard
 
@@ -2673,7 +2673,7 @@ __metadata:
 
 "typescript@patch:typescript@^4.6.4#~builtin<compat/typescript>":
   version: 4.6.4
-  resolution: "typescript@patch:typescript@npm%3A4.6.4#~builtin<compat/typescript>::version=4.6.4&hash=bda367"
+  resolution: "typescript@patch:typescript@npm%3A4.6.4#~builtin<compat/typescript>::version=4.6.4&hash=7ad353"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
