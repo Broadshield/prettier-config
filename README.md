@@ -18,10 +18,13 @@ npm i -SD "github:@Broadshield/prettier-config"
 yarn add -D "github:@Broadshield/prettier-config"
 ```
 
-**Add a `.prettierrc.yml` example [./example.prettierrc.yml](./example.prettierrc.yml)**:
+**Add a `.prettierrc.yjs` example [./example.prettierrc.js](./example.prettierrc.js)**:
 
-```yml
-'@Broadshield/prettier-config'
+```js
+module.exports = {
+  ...require('@Broadshield/prettier-config'),
+  semi: true, // You can add your own custom settings/overrides here
+};
 ```
 
 **Or edit `package.json` example [./package.json](./package.json)**:

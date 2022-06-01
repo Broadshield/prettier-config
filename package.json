@@ -19,14 +19,17 @@
     "node": ">=14.15.0"
   },
   "scripts": {
-    "format": "yarn exec prettier --write . --config .prettierrc.js",
-    "bump": "yarn version -i patch;git add .yarn package.json;git commit -m 'chore(release): bump version'",
-    "bump:minor": "yarn version -i minor;git add .yarn package.json;git commit -m 'chore(release): bump version'",
-    "build": "yarn pack --install-if-needed --out packages/%s-%v.tgz",
+    "format": "yarn exec prettier --write . --config .prettierrc.js --ignore-unknown",
+    "bump": "yarn version -i patch && git add .yarn package.json;yarn run release",
+    "bump:minor": "yarn version -i minor;git add .yarn package.json;yarn run release",
+    "build": "rimraf build && mkdir -p build && yarn pack --install-if-needed --out build/%s-%v.tgz",
+    "release": "git add .yarn package.json && git commit -m 'chore(release): bump version to ${npm_package_version}' && git tag -a v${npm_package_version} -m 'v${npm_package_version}' && git push origin v${npm_package_version} && git push --tags",
     "publish": "yarn npm publish --access public --tag v${npm_package_version}",
     "postversion": "git push origin --follow-tags",
     "precommit": "yarn exec pretty-quick --staged",
-    "prepare": "yarn exec husky install"
+    "prepare": "yarn exec husky install",
+    "corepack": "corepack enable",
+    "cachefolder": "corepack yarn config get cacheFolder"
   },
   "dependencies": {
     "prettier": "*"
@@ -38,18 +41,22 @@
     "rimraf": "latest"
   },
   "optionalDependencies": {
+    "@babel/parser": "*",
     "@prettier/plugin-ruby": "*",
     "@prettier/plugin-xml": "*",
     "@typescript-eslint/parser": "*",
     "@typescript-eslint/typescript-estree": "*",
+    "angular-html-parser": "*",
     "eslint": "*",
     "eslint-config-prettier": "*",
+    "graphql": "*",
     "postcss": "*",
     "postcss-scss": "*",
     "prettier-package-json": "*",
     "prettier-plugin-java": "*",
     "prettier-plugin-properties": "*",
     "prettier-plugin-sh": "*",
+    "remark-parse": "*",
     "stylelint": "*",
     "stylelint-config-prettier": "*",
     "typescript": "*",

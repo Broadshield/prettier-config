@@ -22,6 +22,7 @@ node_modules/
 /.*rc.properties
 /.*rc.ini
 /.*rc.env
+/.pnp.*js
 
 ## Ignore dynamic files
 CHANGELOG.md

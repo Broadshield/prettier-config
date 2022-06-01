@@ -1,9 +1,9 @@
 module.exports = {
   tabWidth: 2,
-  indent: 2,
   useTabs: false,
   printWidth: 120,
   bracketSameLine: true,
+  proseWrap: 'preserve',
   endOfLine: 'lf',
   embeddedLanguageFormatting: 'auto',
   trailingComma: 'es5',
@@ -11,8 +11,16 @@ module.exports = {
   semi: true,
   arrowParens: 'always',
   singleQuote: true,
+  quoteProps: 'consistent',
 
   overrides: [
+    {
+      files: ['**/*.yml', '**/*.yaml'],
+      options: {
+        printWidth: 1000,
+        parser: 'yaml',
+      },
+    },
     {
       files: 'package*.json',
       options: {
@@ -30,9 +38,29 @@ module.exports = {
       },
     },
     {
+      files: ['**/*.js', '**/*.jsx'],
+      options: {
+        parser: 'babel',
+        useTabs: false,
+        tabWidth: 2,
+        trailingComma: 'all',
+        semi: true,
+      },
+    },
+    {
       files: ['**/*.json'],
       options: {
+        singleQuote: false,
+        quoteProps: 'preserve',
         parser: 'json',
+      },
+    },
+    {
+      files: ['**/*.json5'],
+      options: {
+        singleQuote: false,
+        quoteProps: 'preserve',
+        parser: 'json5',
       },
     },
     {
@@ -40,6 +68,24 @@ module.exports = {
       options: {
         parser: 'markdown',
         proseWrap: 'preserve',
+      },
+    },
+    {
+      files: ['**/*.css'],
+      options: {
+        parser: 'css',
+      },
+    },
+    {
+      files: ['**/*.scss'],
+      options: {
+        parser: 'scss',
+      },
+    },
+    {
+      files: ['**/*.less'],
+      options: {
+        parser: 'less',
       },
     },
     {
