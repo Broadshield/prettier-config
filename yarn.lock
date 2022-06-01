@@ -15,7 +15,7 @@ __metadata:
     "@typescript-eslint/typescript-estree": "*"
     eslint: "*"
     eslint-config-prettier: "*"
-    husky: latest
+    husky: ^8.0.1
     lint-staged: latest
     postcss: "*"
     postcss-scss: "*"
@@ -1302,7 +1302,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"husky@npm:latest":
+"husky@npm:^8.0.1":
   version: 8.0.1
   resolution: "husky@npm:8.0.1"
   bin:

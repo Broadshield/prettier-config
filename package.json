@@ -2,7 +2,7 @@
   "name": "@Broadshield/prettier-config",
   "description": "Prettier configuration for Broadshield",
   "main": "prettierrc.js",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Broadshield/prettier-config.git",
@@ -14,29 +14,25 @@
     "access": "public",
     "registry": "https://npm.pkg.github.com"
   },
-  "keywords": [
-    "prettier",
-    "config",
-    "prettier-config",
-    "Broadshield"
-  ],
+  "keywords": ["prettier", "config", "prettier-config", "Broadshield"],
   "engines": {
     "node": ">=14.15.0"
   },
   "scripts": {
     "format": "prettier --write . --config .prettierrc.js",
-    "bump": "yarn version -i patch",
-    "bump:minor": "yarn version -i minor",
+    "bump": "yarn version -i patch;git add .yarn",
+    "bump:minor": "yarn version -i minor;git add .yarn",
     "build": "yarn pack --install-if-needed --out packages/%s-%v.tgz",
     "publish": "yarn npm publish --access public",
     "postversion": "git push --tags -f && git push -f",
-    "precommit": "pretty-quick"
+    "precommit": "pretty-quick --staged",
+    "prepare": "husky install"
   },
   "dependencies": {
     "prettier": "*"
   },
   "devDependencies": {
-    "husky": "latest",
+    "husky": "^8.0.1",
     "lint-staged": "latest",
     "pretty-quick": "latest",
     "rimraf": "latest"
@@ -61,10 +57,7 @@
     "yaml": "*"
   },
   "lint-staged": {
-    "*": [
-      "prettier --write",
-      "git add"
-    ]
+    "*": ["prettier --write", "git add"]
   },
   "packageManager": "yarn@3.2.1"
 }
