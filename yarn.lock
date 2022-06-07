@@ -14,10 +14,10 @@ __metadata:
     "@prettier/plugin-xml": "*"
     "@typescript-eslint/parser": "*"
     "@typescript-eslint/typescript-estree": "*"
-    angular-html-parser: ^1.8.0
+    angular-html-parser: "*"
     eslint: "*"
     eslint-config-prettier: "*"
-    graphql: ^16.5.0
+    graphql: "*"
     husky: ^8.0.1
     lint-staged: latest
     postcss: "*"
@@ -398,7 +398,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"angular-html-parser@npm:^1.8.0":
+"angular-html-parser@npm:*":
   version: 1.8.0
   resolution: "angular-html-parser@npm:1.8.0"
   dependencies:
@@ -1351,7 +1351,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"graphql@npm:^16.5.0":
+"graphql@npm:*":
   version: 16.5.0
   resolution: "graphql@npm:16.5.0"
   checksum: a82a926d085818934d04fdf303a269af170e79de943678bd2726370a96194f9454ade9d6d76c2de69afbd7b9f0b4f8061619baecbbddbe82125860e675ac219e
