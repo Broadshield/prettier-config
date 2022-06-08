@@ -94,7 +94,6 @@ module.exports = {
         parser: 'sh',
         tabWidth: 2,
         useTabs: false,
-        indent: 2,
       },
     },
   ],
