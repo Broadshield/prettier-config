@@ -2,7 +2,7 @@
   "name": "@broadshield/prettier-config",
   "description": "Prettier configuration for Broadshield",
   "main": "prettierrc.js",
-  "version": "0.3.6",
+  "version": "0.3.7",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Broadshield/prettier-config.git",
