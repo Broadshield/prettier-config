@@ -2,7 +2,7 @@
   "name": "@broadshield/prettier-config",
   "description": "Prettier configuration for Broadshield",
   "main": "prettierrc.js",
-  "version": "0.3.8",
+  "version": "0.3.9",
   "repository": {
     "type": "git",
     "url": "git://github.com/broadshield/prettier-config.git",
@@ -24,7 +24,7 @@
     "bump:minor": "yarn version -i minor && yarn run release",
     "build": "rimraf build && mkdir -p build && yarn pack --install-if-needed --out build/%s-%v.tgz",
     "release": "git add .yarn package.json && git commit -m 'chore(release): bump version to ${npm_package_version}' && git tag -a v${npm_package_version} -m 'v${npm_package_version}' && yarn run postversion && yarn npm publish",
-    "postversion": "git push origin --follow-tags && git push --tags",
+    "postversion": "git push origin --follow-tags -f && git push --tags -f",
     "precommit": "yarn exec pretty-quick --staged",
     "prepare": "yarn exec husky install",
     "corepack": "corepack enable",

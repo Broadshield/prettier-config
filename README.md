@@ -8,21 +8,21 @@ A universal prettier.io config file for all repositories at Wearsafe
 
 ```bash
 # Install in a package.json file
-npm i -SD "github:@Broadshield/prettier-config"
+npm i -SD "github:@broadshield/prettier-config"
 ```
 
 **Install using Yarn**:
 
 ```bash
 # Install in a package.json file
-yarn add -D "github:@Broadshield/prettier-config"
+yarn add -D "github:@broadshield/prettier-config"
 ```
 
 **Add a `.prettierrc.yjs` example [./example.prettierrc.js](./example.prettierrc.js)**:
 
 ```js
 module.exports = {
-  ...require('@Broadshield/prettier-config'),
+  ...require('@broadshield/prettier-config'),
   semi: true, // You can add your own custom settings/overrides here
 };
 ```
@@ -31,7 +31,7 @@ module.exports = {
 
 ```json
 {
-  "prettier": "@Broadshield/prettier-config"
+  "prettier": "@broadshield/prettier-config"
 }
 ```
 
@@ -39,7 +39,7 @@ module.exports = {
 
 ```bash
 # Copy the .prettierignore file to the root of your repository
-cp node-modules/@Broadshield/prettier-config/.prettierignore .prettierignore
+cp node-modules/@broadshield/prettier-config/.prettierignore .prettierignore
 ```
 
 ## Setup auto-formatting on changed files when committing
