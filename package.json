@@ -1,5 +1,5 @@
 {
-  "name": "@Broadshield/prettier-config",
+  "name": "@broadshield/prettier-config",
   "description": "Prettier configuration for Broadshield",
   "main": "prettierrc.js",
   "version": "0.3.6",
@@ -11,8 +11,7 @@
   "author": "Jamie Nelson <jamie@wearsafe.com>",
   "license": "Apache-2.0",
   "publishConfig": {
-    "access": "public",
-    "registry": "https://npm.pkg.github.com"
+    "access": "public"
   },
   "keywords": ["prettier", "config", "prettier-config", "Broadshield"],
   "engines": {
